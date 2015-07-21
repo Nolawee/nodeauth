@@ -12,7 +12,6 @@ var multer = require('multer');
 var flash = require('connect-flash');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-var sourceMap = require('source-map');
 var db = mongoose.connection;
 
 
@@ -26,7 +25,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // Handle File Uploads
-app.use(multer({ dest: './public/images/uploads'}));
+app.use(multer({dest:'./uploads'}));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));

@@ -22,8 +22,6 @@
     "passport":"*",
     "passport-local":"*",
     "passport-http":"*",
-    "multer":"0.1.8",
-    "source-map":"*",
-    "node-sass-middleware":"*"
+    "multer":"*"
   }
 }
